@@ -13,10 +13,10 @@ public class HomePage extends BasePage {
     }
 
     @FindBy(css = "#menu-item-4436")
-    protected WebElement insightsDropdown;
+    private WebElement insightsDropdown;
 
     @FindBy(css = ".page-item")
-    protected List<WebElement> insightElements;
+    private List<WebElement> insightElements;
 
     public void stepOverInsightDropdown() {
         this.actions.moveToElement(insightsDropdown).build().perform();

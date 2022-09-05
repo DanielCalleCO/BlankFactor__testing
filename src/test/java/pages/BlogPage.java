@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class BlogPage extends BasePage {
 
     @FindBy(css = ".post-title")
-    protected WebElement blogTitle;
+    private WebElement blogTitle;
 
     public BlogPage(WebDriver driver) {
         super(driver);

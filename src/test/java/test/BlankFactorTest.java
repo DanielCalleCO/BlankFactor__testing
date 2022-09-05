@@ -15,7 +15,7 @@ public class BlankFactorTest extends BaseTest {
     }
 
     @Test
-    public void suscribeNewsletter() throws InterruptedException {
+    public void suscribeNewsletter() {
         this.homePage.stepOverInsightDropdown();
         this.homePage.clickBlog();
         this.blogListPage.fillNewsLetterEmail("danielcalleco@gmail.com");
@@ -23,4 +23,10 @@ public class BlankFactorTest extends BaseTest {
         Assert.assertTrue(blogListPage.subscribeConfirm().isDisplayed());
     }
 
+    @Test
+    public void listOfBlogs() {
+        this.homePage.stepOverInsightDropdown();
+        this.homePage.clickBlog();
+        this.blogListPage.printEntireBlogList();
+    }
 }
