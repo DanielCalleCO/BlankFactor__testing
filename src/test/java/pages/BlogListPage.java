@@ -34,10 +34,6 @@ public class BlogListPage extends BasePage {
         super(driver);
     }
 
-    // public List<WebElement> getBlogTitles() {
-    // return this.blogTitles;
-    // }
-
     public void clickTrendingBlog() {
         trendingBlog.click();
     }
